@@ -11,7 +11,11 @@ static char **duplicateArgs(int argc, char **argv)
 {
 	char **cap = malloc(argc * sizeof(char*));
 	for (int i=0;i<argc;i++){
-		cap[i] = argv[i];
+		//cap[i] = argv[i];
+		cap[i] = malloc(strlen(argv[i]) * sizeof(char));
+		for (int j=0;j<strlen(argv[i]);j++){
+			cap[i][j] = toupper(argv[i][j]);
+		}
 	}
 	return cap;
 	//int *p;
@@ -23,9 +27,9 @@ static char **duplicateArgs(int argc, char **argv)
 static void freeDuplicatedArgs(char **copy)
 {
 	//Free each element
-	//for (int i=0; i<10; ++i) {
-  	//	free(copy[i]);
-	//}
+	for (int i=0; i<sizeof(copy); i++) {
+  		free(copy[i]);
+	}
 	//Free the whole array
 	free(copy);
 }
