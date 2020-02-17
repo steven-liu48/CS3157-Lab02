@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <limits.h>
+#include <stdlib.h>
 
 int main(int argc, const char* argv[]){
 	int size;
@@ -28,7 +29,7 @@ int main(int argc, const char* argv[]){
 
 			
     //Assign random numbers into the array
-	srandom();
+	srandom(size);
     for (int i = 0; i < size; i++){
 		array[i] = random()%100 + 1;
 		printf("%d ", array[i]);
@@ -72,7 +73,11 @@ int main(int argc, const char* argv[]){
 
 	//Free
 	free(array);
+	printf("1");
 	free(asc);
-	free(array);
+	printf("2");
+	free(des);
+	printf("3");
+
 }
 
