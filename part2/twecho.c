@@ -9,12 +9,21 @@
 
 static char **duplicateArgs(int argc, char **argv)
 {
-
+	char **cap;
+	int *p;
+	for (int i = 0; i < argc; i++){
+		cap[i]=
+	}	
 }
 
 static void freeDuplicatedArgs(char **copy)
 {
-
+	//Free each element
+	for (int i=0; i<10; ++i) {
+  		free(copy[i]);
+	}
+	//Free the whole array
+	free(**copy);
 }
 
 /*
