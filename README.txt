@@ -10,7 +10,7 @@ implemented or how you tried to fix your non-working code.
 
 Description:
 Part 1: My code works exactly as specified in the lab.
-Part 2: My code works exactly as specified in the lab.
+Part 2: My code works exactly as specified in the lab. Includes sorting code segments from https://stackoverflow.com/questions/3893937/sorting-an-array-in-c
 For both parts, Run "make vtest" in each folder to use valgrind and check for memory errors.
 
 

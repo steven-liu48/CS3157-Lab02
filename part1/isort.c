@@ -36,6 +36,7 @@ int main(int argc, const char* argv[]){
 	}
 
 	//Quick sort the two copies 
+	//With code segments from https://stackoverflow.com/questions/3893937/sorting-an-array-in-c
 	for (int i = 0; i < size; i++){
         asc[i] = array[i];
   		des[i] = array[i];
