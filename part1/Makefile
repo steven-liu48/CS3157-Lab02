@@ -4,8 +4,8 @@ isort: isort.o
 isort.o: isort.c
 	gcc -c -g -Wall isort.c
 	
-.PHONY: valgrind
-valgrind: isort
+.PHONY: vtest
+vtest: isort
 	valgrind --leak-check=yes ./isort
 
 .PHONY: clean

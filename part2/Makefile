@@ -4,9 +4,9 @@ isort: twecho.o
 isort.o: twecho.c
 	gcc -c -g -Wall twecho.c
 	
-.PHONY: valgrind
-valgrind: twecho
-	valgrind --leak-check=yes ./twecho 123 abc
+.PHONY: vtest
+vtest: twecho
+	valgrind --leak-check=yes ./twecho 123 a bc def ghij klmno pqrstu vwxyz
 
 .PHONY: clean
 clean:

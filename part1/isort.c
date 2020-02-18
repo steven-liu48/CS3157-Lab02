@@ -70,14 +70,15 @@ int main(int argc, const char* argv[]){
     for (int i = 0; i < size; i++){
         printf("%d ", des[i]);
     }
+	printf("\n");
 
 	//Free
 	free(array);
-	printf("1");
+	//printf("1");
 	free(asc);
-	printf("2");
+	//printf("2");
 	free(des);
-	printf("3");
+	//printf("3");
 
 }
 
